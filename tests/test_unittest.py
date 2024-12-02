@@ -1,3 +1,5 @@
+from login import login
+
 import unittest
 
 
@@ -11,5 +13,9 @@ class TestModule(unittest.TestCase):
         self.assertEqual(add_numbers(1, -1), 0)
         self.assertNotEqual(add_numbers(2, 2), 5)
 
-if __name__ = '__main__':
+    def test_login(self):
+        self.assertEqual(login(), 1)
+
+
+if __name__ == '__main__':
     unittest.main()
